@@ -132,5 +132,19 @@ const errorBag: ErrorContainer = {
 const fetchedUserData = {
   id: "u1",
   name: "alex",
-  job: { title: "boss", description: "the boss" },
+  // job: { title: "boss", description: "the boss" },
 };
+
+// console.log(fetchedUserData.job);
+// console.log(fetchedUserData.job&&console.log(fetchedUserData.job.title)); would work with vanilla JS
+
+// console.log(fetchedUserData?.job?.title) // this can work in later versions of TS
+
+//nullish coalescing
+const input = null;
+//imagine we dont know if it is null 
+const storedData = input || 'default'
+console.log(storedData)
+
+
+
